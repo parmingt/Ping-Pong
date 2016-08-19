@@ -1,0 +1,17 @@
+li {
+  list-style: none;
+  margin: 2px;
+  background-color: lightgrey;
+  max-width: auto;
+  padding: 1px 5px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+li:hover {
+  background-color: grey;
+}
+
+.jumbotron {
+  padding-left: 10px;
+}
