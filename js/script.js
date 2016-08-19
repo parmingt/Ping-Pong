@@ -3,16 +3,25 @@ $(document).ready(function(){
   $("#inputForm").submit(function(event){
     event.preventDefault();
 
+    $("#outputList").empty(); //clear display list
+
     var inputNumber = parseInt($("#inputNumber").val())
+
+    //check for negative numbers
+    if(inputNumber <= 0){
+      $("#outputList").append("Please enter a positive integer");
+      return;
+    }
+
     var outputArray = getPingPongArray(inputNumber);
 
     //display array on webpage
-    $("#outputList").empty();
     outputArray.forEach(function(value){
       $("#outputList").append("<li>" + value + "</li>");
-    })
+    });
   });
 });
+
 
 //Back end
 function getPingPongArray(input){
@@ -33,6 +42,6 @@ function getPingPongArray(input){
     }
     outputArray.push(value);
   }
-  
+
   return outputArray;
 }
