@@ -17,7 +17,7 @@ By Peter Armington
 
 ## Setup
 
-Simply visit parmingt.github.io/ping-pong to run the app.
+Simply visit parmingt.github.io/Ping-Pong to run the app.
 
 ## Technologies Used
 
